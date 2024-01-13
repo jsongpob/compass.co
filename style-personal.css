@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* @media screen and (min-width: 1920px){
+    .head{
+        height: 1080px;
+        background-color: aqua;
+    }
+}
+@media only screen and (min-width: 2500px){
+    .head{
+        height: 1440px;
+        background-color: red;
+    }
+} */
+
+.marginCenter{
+    position: relative;
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header>a{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    transition: 0.3s;
+}
+.header>a:hover{
+    color: darkgray;
+}
+/* Section start */
+
+.head{
+    background-color: #1E2C35;
+    width: 100%;
+    min-height: 1080px;
+    max-height: 1440px;
+    height: auto;
+    color: #fff;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.pos-rel-start{
+    margin-top: 15%;
+    position: relative;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pos-rel-start>.titleL{
+    padding: 50px;
+    font-size: 120px;
+    font-weight: 400;
+}
+.btnstart{
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+    padding: 10px 60px 10px 60px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0%);
+    transition: 0.5s;
+}
+.btnstart:hover{
+    background-color: #fff;
+    color: #1E2C35;
+}
+a:link{
+    text-decoration: none;
+}
+.button a{
+    width: 10px;
+}
+.header{
+    display: flex;
+    width: auto;
+    align-items: center;
+    padding: 20px;
+    margin: 0 50px;
+}
+.header>.left{
+    margin-left: auto;
+    cursor: pointer;
+}
+.head img{
+    width: 230px;
+}
+.head i{
+    color: #fff;
+    transition: 0.5s;
+}
+.head i:hover{
+    color: rgb(174, 174, 174);
+}
+
+/* Section start */
+
+/* Section-personalized */
+.personal{
+    background-color: #1E2C35;
+    color: #fff;
+    width: 100%;
+    height: 1080px;
+}
+.personal h1{
+    padding-top: 10%;
+    position: relative;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 300;
+    font-size: 64px;
+}
+#personalS{
+    margin: 100px 300px 150px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+.activity, .act{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 10px 20px 10px 20px;
+    transition: 0.2s;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0%);
+}
+.active, .activity:hover{
+    color: #1E2C35;
+    background-color: #fff;
+}
+
+/* section-result */
+
+.result{
+    width: 100%;
+    height: 1080px;
+    background-color: #1E2C35;
+}
+.result h1{
+    padding-top: 2%;
+    position: relative;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 300;
+    font-size: 45px;
+    color: #fff;
+}
+.place button{
+    border: none;
+}
+.placelist{
+    margin-top: 3%;
+    width: auto;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    gap: 16px;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none; 
+
+}
+.place{
+    display: inline-block;
+    cursor: pointer;
+}
+.place>img{
+    width: 230px;
+    height: 780px;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+    /* object-position: 30% 100%; */
+}
+.unact{
+    filter: brightness(40%);
+    transition: 0.5s;
+    text-overflow: 0;
+}
+.place>h2{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1;
+    position: absolute;
+    transform: rotate(-90deg);
+    color: #fff;
+    transform-origin: top left;
+    font-size: 64px;
+    margin-top: 780px;
+    width: 780px;
+}
+.unact:hover{
+    filter: brightness(100%);
+    display: block;
+}
+
+/* airbnb-box */
+.airbnb{
+    padding: 0 15px;
+    margin: 50px;
+    right: 0;
+    background-color: #fff;
+    height: 60px;
+    z-index: 3;
+    position: absolute;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    color: #0F171C;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.airbnb img{
+    padding: 0 10px;
+    position: relative;
+    width: 120px;
+}
+.airbnb>h4{
+    margin-top: 10px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    position: relative;
+    color: #0F171C;
+    text-align: center;
+}
+
+/* place-infomation */
+
+.imgxl{
+    position: absolute;
+    width: 100%;
+    height: 940px;
+    object-fit: cover;
+    filter: brightness(80%);
+    z-index: 0;
+}
+.placeinfo{
+    display: flex;
+    width: 100%;
+    height: 940px;
+}
+.titleplace{
+    margin-top: 600px;
+    margin-left: 100px;
+    /* background-color: red; */
+    z-index: 1;
+}
+.placeinfo h1{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 160px;
+    color: #fff;
+}
+.placeinfo h3{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    color: #fff;
+}
+.header-info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    gap: 40px;
+    padding-left: 100px;
+}
+.header-info h5{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #0F171C;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.header-info h5:hover{
+    text-decoration: underline;
+}
+
+/* main-info */
+
+.main-info{
+    width: 100%;
+    height: 1800px;
+    background-color: #0F171C;
+    padding: 50px 100px;
+}
+.main-info p{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 100;
+}
+.main-info h3{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    color: #fff;
+    text-align: left;
+    margin: 50px 0 50px 0;
+}
+
+.info-1{
+    display: flex;
+    gap: 16px;
+}
+#info-a{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    border: 0.5px solid #fff;
+    padding: 50px;
+}
+.info-2{
+    display: flex;
+    width: 100%;
+}
+#info-b{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #0F171C;
+    background-color: #fff;
+    border: 0.5px solid #0F171C;
+    padding: 100px 40px 100px 40px;
+    flex-grow: 1;
+    text-align: center;
+}
+.info-3{
+    display: flex;
+}
+#info-c{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    border: 0.5px solid #fff;
+    text-align: center;
+    padding: 50px 100px 50px 100px;
+}
+.info-3 img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(70%);
+    z-index: 2;
+}
+#info-d{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    color: #fff;
+    position: absolute;
+    z-index: 3;
+    width: 250px;
+    margin: 250px 0 0 20px;
+}
+
+/* airbnb-promo */
+
+.airbnbxl{
+    background-color: #fff;
+    width: 100%;
+    height: 580px;
+}
+.promo{
+    left: 0;
+}
+/* .info-airbnb{
+} */
+.airbnb-content{
+    display: flex;
+    padding-top: 110px;
+    justify-content: center;
+}
+.AC{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(70%);
+    z-index: 2;
+}
+.info-airbnb img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+#info-air{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    color: #fff;
+    position: absolute;
+    z-index: 3;
+    width: 250px;
+    margin: 250px 0 0 20px;
+}
+
+/* tag-instagram */
+.tag-ig{
+    width: 100%;
+    height: auto;
+    background-color: #0F171C;
+    padding: 50px;
+    padding-top: 100px;
+}
+/* .igrealtime{
+} */
+.tag-ig h1{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 300;
+    font-size: 34px;
+    color: #fff;
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+/* footer */
+
+footer{
+    background-color: #1E2C35;
+    width: 100%;
+    height: 790px;
+    display: flex;
+}
+.logoF{
+    position: absolute;
+    padding: 280px 0 0 100px;
+    background-color: #1E2C35;
+    border: 1px solid #fff;
+    width: 50%;
+    height: 790px;
+    color: #fff;
+}
+.logoF img{
+    width: 500px;
+}
+.logoF h1{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+}
+.footerR{
+    border: 1px solid #fff;
+    position: absolute;
+    width: 50%;
+    height: 790px;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.social{
+    display: flex;
+    width: 100%;
+}
+.social a{
+    flex-grow: 1;
+    background-color: #1E2C35;
+    border: 1px solid #fff;
+    width: auto;
+    height: auto;
+    font-size: 29px;
+    padding: 90px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.social>.fb:hover{
+    background-color: #4267B2;
+    color: #fff;
+}
+.social>.ig:hover{
+    background-color: #eb0c65;
+    color: #fff;
+}
+.social>.tw:hover{
+    background-color: #1DA1F2;
+    color: #fff;
+}
+.social>.yt:hover{
+    background-color: #FF0000;
+    color: #fff;
+}
+.xxlbtn{
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #1E2C35;
+    right: 0;
+    flex-grow: 1;
+}
+.xxlbtn a{
+    display: flex;
+    border: 1px solid #fff;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    transition: 0.3s;
+}
+.xxlbtn a:hover{
+    background-color: #475D65;
+}
+.xxlbtn h1{
+    color: #fff;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+.copyright{
+    padding: 90px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    background-color: #1E2C35;
+}
